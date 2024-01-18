@@ -5,7 +5,7 @@
 By default, the model is loaded with FP16 precision, running the above code requires about 13GB of VRAM. If your GPU's VRAM is limited, you can try loading the model quantitatively, as follows:
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b",trust_remote_code=True).quantize(4).cuda()
+model = AutoModel.from_pretrained("/gemini/pretrain",trust_remote_code=True).quantize(4).cuda()
 ```
 
 Model quantization will bring some performance loss. Through testing, ChatGLM3-6B can still perform natural and smooth generation under 4-bit quantization.
@@ -15,7 +15,7 @@ Model quantization will bring some performance loss. Through testing, ChatGLM3-6
 If you don't have GPU hardware, you can also run inference on the CPU, but the inference speed will be slower. The usage is as follows (requires about 32GB of memory):
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).float()
+model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True).float()
 ```
 
 ### Mac Deployment
@@ -37,7 +37,7 @@ If you have multiple GPUs, but each GPU's VRAM size is not enough to accommodate
 ```python
 from utils import load_model_on_gpus
 
-model = load_model_on_gpus("THUDM/chatglm3-6b", num_gpus=2)
+model = load_model_on_gpus("/gemini/pretrain", num_gpus=2)
 ```
 
 This allows the model to be deployed on two GPUs for inference. You can change `num_gpus` to the number of GPUs you want to use. It is evenly split by default, but you can also pass the `device_map` parameter to specify it yourself.

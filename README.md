@@ -1,7 +1,7 @@
 # ChatGLM3
 
 <p align="center">
-🤗 <a href="https://huggingface.co/THUDM/chatglm3-6b" target="_blank">HF Repo</a> • 🤖 <a href="https://modelscope.cn/models/ZhipuAI/chatglm3-6b" target="_blank">ModelScope</a> • 🤖 <a href="https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b" target="_blank">WiseModel</a> • 🐦 <a href="https://twitter.com/thukeg" target="_blank">Twitter</a> • 📃 <a href="https://arxiv.org/abs/2103.10360" target="_blank">[GLM@ACL 22]</a> <a href="https://github.com/THUDM/GLM" target="_blank">[GitHub]</a> • 📃 <a href="https://arxiv.org/abs/2210.02414" target="_blank">[GLM-130B@ICLR 23]</a> <a href="https://github.com/THUDM/GLM-130B" target="_blank">[GitHub]</a> <br>
+🤗 <a href="https://huggingface.co//gemini/pretrain" target="_blank">HF Repo</a> • 🤖 <a href="https://modelscope.cn/models/ZhipuAI/chatglm3-6b" target="_blank">ModelScope</a> • 🤖 <a href="https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b" target="_blank">WiseModel</a> • 🐦 <a href="https://twitter.com/thukeg" target="_blank">Twitter</a> • 📃 <a href="https://arxiv.org/abs/2103.10360" target="_blank">[GLM@ACL 22]</a> <a href="https://github.com/THUDM/GLM" target="_blank">[GitHub]</a> • 📃 <a href="https://arxiv.org/abs/2210.02414" target="_blank">[GLM-130B@ICLR 23]</a> <a href="https://github.com/THUDM/GLM-130B" target="_blank">[GitHub]</a> <br>
 </p>
 <p align="center">
     👋 加入我们的 <a href="https://join.slack.com/t/chatglm/shared_invite/zt-25ti5uohv-A_hs~am_D3Q8XPZMpj7wwQ" target="_blank">Slack</a> 和 <a href="resources/WECHAT.md" target="_blank">微信</a>
@@ -39,9 +39,9 @@
 2. **更完整的功能支持：** ChatGLM3-6B 采用了全新设计的 [Prompt 格式](PROMPT.md)
    ，除正常的多轮对话外。同时原生支持[工具调用](tools_using_demo/README.md)（Function Call）、代码执行（Code Interpreter）和
    Agent 任务等复杂场景。
-3. **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b)
-   外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base)
-   、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k)。以上所有权重对学术研究**完全开放**
+3. **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co//gemini/pretrain)
+   外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co//gemini/pretrain-base)
+   、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co//gemini/pretrain-32k)。以上所有权重对学术研究**完全开放**
    ，在填写 [问卷](https://open.bigmodel.cn/mla/form) 进行登记后**亦允许免费商业使用**。
 
 -----
@@ -58,9 +58,9 @@ ChatGLM3 开源模型旨在与开源社区一起推动大模型技术发展，�
 
 |      Model       | Seq Length |                                                                                                   Download                                                                                                   
 |:----------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
-|   ChatGLM3-6B    |     8k     |        [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b)         
-| ChatGLM3-6B-Base |     8k     | [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b-base) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-base) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b-base) 
-| ChatGLM3-6B-32K  |    32k     |  [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b-32k) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-32k) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b-32k)   
+|   ChatGLM3-6B    |     8k     |        [HuggingFace](https://huggingface.co//gemini/pretrain) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b)         
+| ChatGLM3-6B-Base |     8k     | [HuggingFace](https://huggingface.co//gemini/pretrain-base) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-base) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b-base) 
+| ChatGLM3-6B-32K  |    32k     |  [HuggingFace](https://huggingface.co//gemini/pretrain-32k) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-32k) \| [WiseModel](https://www.wisemodel.cn/models/ZhipuAI/chatglm3-6b-32k)   
 
 请注意，所有模型的最新更新都会在 Huggingface 率先发布。 ModelScope 和 WiseModel 由于没有与 Huggingface 同步，需要开发人员手动更新，可能会在
 Huggingface 更新后一段时间内同步更新。
@@ -151,8 +151,8 @@ pip install -r requirements.txt
 
 ```python
 >> > from transformers import AutoTokenizer, AutoModel
->> > tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True)
->> > model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True, device='cuda')
+>> > tokenizer = AutoTokenizer.from_pretrained("/gemini/pretrain", trust_remote_code=True)
+>> > model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True, device='cuda')
 >> > model = model.eval()
 >> > response, history = model.chat(tokenizer, "你好", history=[])
 >> > print(response)
@@ -176,7 +176,7 @@ B, 很高兴见到你, 欢迎问我任何问题。
 #### 从本地加载模型
 
 以上代码会由 `transformers`
-自动下载模型实现和参数。完整的模型实现在 [Hugging Face Hub](https://huggingface.co/THUDM/chatglm3-6b)
+自动下载模型实现和参数。完整的模型实现在 [Hugging Face Hub](https://huggingface.co//gemini/pretrain)
 。如果你的网络环境较差，下载模型参数可能会花费较长时间甚至失败。此时可以先将模型下载到本地，然后从本地加载。
 
 从 Hugging Face Hub
@@ -184,7 +184,7 @@ B, 很高兴见到你, 欢迎问我任何问题。
 ，然后运行
 
 ```Shell
-git clone https://huggingface.co/THUDM/chatglm3-6b
+git clone https://huggingface.co//gemini/pretrain
 ```
 
 如果从你从 HuggingFace 下载比较慢，也可以从 [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b)
@@ -274,7 +274,7 @@ python openai_api_request.py
 默认情况下，模型以 FP16 精度加载，运行上述代码需要大概 13GB 显存。如果你的 GPU 显存有限，可以尝试以量化方式加载模型，使用方法如下：
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).quantize(4).cuda()
+model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True).quantize(4).cuda()
 ```
 
 模型量化会带来一定的性能损失，经过测试，ChatGLM3-6B 在 4-bit 量化下仍然能够进行自然流畅的生成。
@@ -284,7 +284,7 @@ model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).q
 如果你没有 GPU 硬件的话，也可以在 CPU 上进行推理，但是推理速度会更慢。使用方法如下（需要大概 32GB 内存）
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).float()
+model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True).float()
 ```
 
 ### Mac 部署

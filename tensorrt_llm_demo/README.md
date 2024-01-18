@@ -41,9 +41,9 @@ apt-get install git-lfs
 #### 从Huggingface下载ChatGLM3模型：
 ```
 # 您可以选择具体想部署的模型下载
-git clone https://huggingface.co/THUDM/chatglm3-6b      chatglm3_6b
-git clone https://huggingface.co/THUDM/chatglm3-6b-base chatglm3_6b_base
-git clone https://huggingface.co/THUDM/chatglm3-6b-32k  chatglm3_6b_32k
+git clone https://huggingface.co//gemini/pretrain      chatglm3_6b
+git clone https://huggingface.co//gemini/pretrain-base chatglm3_6b_base
+git clone https://huggingface.co//gemini/pretrain-32k  chatglm3_6b_32k
 ```
 
 #### 使用build.py来构建推理引擎：

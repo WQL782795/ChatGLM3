@@ -5,7 +5,7 @@
 默认情况下，模型以 FP16 精度加载，运行上述代码需要大概 13GB 显存。如果你的 GPU 显存有限，可以尝试以量化方式加载模型，使用方法如下：
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b",trust_remote_code=True).quantize(4).cuda()
+model = AutoModel.from_pretrained("/gemini/pretrain",trust_remote_code=True).quantize(4).cuda()
 ```
 
 模型量化会带来一定的性能损失，经过测试，ChatGLM3-6B 在 4-bit 量化下仍然能够进行自然流畅的生成。
@@ -14,7 +14,7 @@ model = AutoModel.from_pretrained("THUDM/chatglm3-6b",trust_remote_code=True).qu
 
 如果你没有 GPU 硬件的话，也可以在 CPU 上进行推理，但是推理速度会更慢。使用方法如下（需要大概 32GB 内存）
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).float()
+model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True).float()
 ```
 
 ### Mac 部署
@@ -34,6 +34,6 @@ model = AutoModel.from_pretrained("your local path", trust_remote_code=True).to(
 ```python
 from utils import load_model_on_gpus
 
-model = load_model_on_gpus("THUDM/chatglm3-6b", num_gpus=2)
+model = load_model_on_gpus("/gemini/pretrain", num_gpus=2)
 ```
 即可将模型部署到两张 GPU 上进行推理。你可以将 `num_gpus` 改为你希望使用的 GPU 数。默认是均匀切分的，你也可以传入 `device_map` 参数来自己指定。 

@@ -16,7 +16,7 @@ AUTORESUME_FROM_CHECKPOINT=True
 DATESTR=`date +%Y%m%d-%H%M%S`
 RUN_NAME=advertise_gen_pt
 
-BASE_MODEL_PATH=THUDM/chatglm3-6b
+BASE_MODEL_PATH=/gemini/pretrain
 DATASET_PATH=formatted_data/advertise_gen.jsonl
 OUTPUT_DIR=output/${RUN_NAME}-${DATESTR}-${PRE_SEQ_LEN}-${LR}
 

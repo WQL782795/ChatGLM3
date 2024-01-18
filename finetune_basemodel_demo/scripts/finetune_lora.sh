@@ -17,7 +17,7 @@ SAVE_INTERVAL=500
 
 AUTORESUME_FROM_CHECKPOINT=True
 RUN_NAME=text
-BASE_MODEL_PATH=THUDM/chatglm3-6b-base
+BASE_MODEL_PATH=/gemini/pretrain-base
 DATASET_PATH=data/alpaca_data.jsonl
 DATESTR=`date +%Y%m%d-%H%M%S`
 OUTPUT_DIR=output/${RUN_NAME}-${DATESTR}-${LR}

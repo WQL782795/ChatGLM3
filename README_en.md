@@ -1,7 +1,7 @@
 # ChatGLM3
 
 <p align="center">
-🤗 <a href="https://huggingface.co/THUDM/chatglm3-6b" target="_blank">HF Repo</a> • 🤖 <a href="https://modelscope.cn/models/ZhipuAI/chatglm3-6b" target="_blank">ModelScope</a> • 📔 <a href="https://lslfd0slxc.feishu.cn/wiki/WvQbwIJ9tiPAxGk8ywDck6yfnof" target="_blank">Document</a> • 🐦 <a href="https://twitter.com/thukeg" target="_blank">Twitter</a> • 📃 <a href="https://arxiv.org/abs/2103.10360" target="_blank">[GLM@ACL 22]</a> <a href="https://github.com/THUDM/GLM" target="_blank">[GitHub]</a> • 📃 <a href="https://arxiv.org/abs/2210.02414" target="_blank">[GLM-130B@ICLR 23]</a> <a href="https://github.com/THUDM/GLM-130B" target="_blank">[GitHub]</a> <br>
+🤗 <a href="https://huggingface.co//gemini/pretrain" target="_blank">HF Repo</a> • 🤖 <a href="https://modelscope.cn/models/ZhipuAI/chatglm3-6b" target="_blank">ModelScope</a> • 📔 <a href="https://lslfd0slxc.feishu.cn/wiki/WvQbwIJ9tiPAxGk8ywDck6yfnof" target="_blank">Document</a> • 🐦 <a href="https://twitter.com/thukeg" target="_blank">Twitter</a> • 📃 <a href="https://arxiv.org/abs/2103.10360" target="_blank">[GLM@ACL 22]</a> <a href="https://github.com/THUDM/GLM" target="_blank">[GitHub]</a> • 📃 <a href="https://arxiv.org/abs/2210.02414" target="_blank">[GLM-130B@ICLR 23]</a> <a href="https://github.com/THUDM/GLM-130B" target="_blank">[GitHub]</a> <br>
 </p>
 <p align="center">
     👋 Join our <a href="https://join.slack.com/t/chatglm/shared_invite/zt-25ti5uohv-A_hs~am_D3Q8XPZMpj7wwQ" target="_blank">Slack</a> and <a href="resources/WECHAT.md" target="_blank">WeChat</a>
@@ -35,7 +35,7 @@ We have released the latest **GLM-4** model, which has made new breakthroughs in
 
 2. **More Complete Function Support:** ChatGLM3-6B adopts a newly designed [Prompt format](PROMPT_en.md), supporting multi-turn dialogues as usual. It also natively supports [tool invocation](tools_using_demo/README_en.md) (Function Call), code execution (Code Interpreter), and Agent tasks in complex scenarios.
 
-3. **More Comprehensive Open-source Series:** In addition to the dialogue model [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b), the basic model [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base), and the long-text dialogue model [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k) have also been open-sourced. All these weights are **fully open** for academic research, and **free commercial use is also allowed** after registration via a [questionnaire](https://open.bigmodel.cn/mla/form).
+3. **More Comprehensive Open-source Series:** In addition to the dialogue model [ChatGLM3-6B](https://huggingface.co//gemini/pretrain), the basic model [ChatGLM3-6B-Base](https://huggingface.co//gemini/pretrain-base), and the long-text dialogue model [ChatGLM3-6B-32K](https://huggingface.co//gemini/pretrain-32k) have also been open-sourced. All these weights are **fully open** for academic research, and **free commercial use is also allowed** after registration via a [questionnaire](https://open.bigmodel.cn/mla/form).
 
 -----
 
@@ -47,9 +47,9 @@ Although every effort has been made to ensure the compliance and accuracy of the
 
 | Model | Seq Length |                                                              Download                                                               
 | :---: |:---------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:
-| ChatGLM3-6B | 8k |      [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b)      
-| ChatGLM3-6B-Base | 8k | [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b-base) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-base) 
-| ChatGLM3-6B-32K | 32k |  [HuggingFace](https://huggingface.co/THUDM/chatglm3-6b-32k) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-32k)  
+| ChatGLM3-6B | 8k |      [HuggingFace](https://huggingface.co//gemini/pretrain) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b)      
+| ChatGLM3-6B-Base | 8k | [HuggingFace](https://huggingface.co//gemini/pretrain-base) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-base) 
+| ChatGLM3-6B-32K | 32k |  [HuggingFace](https://huggingface.co//gemini/pretrain-32k) \| [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b-32k)  
 
 ## Projects
 
@@ -124,8 +124,8 @@ The ChatGLM model can be called to start a conversation using the following code
 
 ```python
 >>> from transformers import AutoTokenizer, AutoModel
->>> tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True)
->>> model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True, device='cuda')
+>>> tokenizer = AutoTokenizer.from_pretrained("/gemini/pretrain", trust_remote_code=True)
+>>> model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True, device='cuda')
 >>> model = model.eval()
 >>> response, history = model.chat(tokenizer, "Hello", history=[])
 >>> print(response)
@@ -146,11 +146,11 @@ If you continue to have difficulty sleeping, consult with a healthcare professio
 ```
 
 #### Load Model Locally
-The above code will automatically download the model implementation and parameters by `transformers`. The complete model implementation is available on [Hugging Face Hub](https://huggingface.co/THUDM/chatglm3-6b). If your network environment is poor, downloading model parameters might take a long time or even fail. In this case, you can first download the model to your local machine, and then load it from there.
+The above code will automatically download the model implementation and parameters by `transformers`. The complete model implementation is available on [Hugging Face Hub](https://huggingface.co//gemini/pretrain). If your network environment is poor, downloading model parameters might take a long time or even fail. In this case, you can first download the model to your local machine, and then load it from there.
 
 To download the model from Hugging Face Hub, you need to [install Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) first, then run
 ```Shell
-git clone https://huggingface.co/THUDM/chatglm3-6b
+git clone https://huggingface.co//gemini/pretrain
 ```
 
 If the download from HuggingFace is slow, you can also download it from [ModelScope](https://modelscope.cn/models/ZhipuAI/chatglm3-6b).
@@ -227,7 +227,7 @@ For methods of tool invocation, please refer to [Tool Invocation](tools_using_de
 By default, the model is loaded with FP16 precision, running the above code requires about 13GB of VRAM. If your GPU's VRAM is limited, you can try loading the model quantitatively, as follows:
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b",trust_remote_code=True).quantize(4).cuda()
+model = AutoModel.from_pretrained("/gemini/pretrain",trust_remote_code=True).quantize(4).cuda()
 ```
 
 Model quantization will bring some performance loss. Through testing, ChatGLM3-6B can still perform natural and smooth generation under 4-bit quantization.
@@ -237,7 +237,7 @@ Model quantization will bring some performance loss. Through testing, ChatGLM3-6
 If you don't have GPU hardware, you can also run inference on the CPU, but the inference speed will be slower. The usage is as follows (requires about 32GB of memory):
 
 ```python
-model = AutoModel.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True).float()
+model = AutoModel.from_pretrained("/gemini/pretrain", trust_remote_code=True).float()
 ```
 
 ### Mac Deployment

@@ -13,7 +13,7 @@ SAVE_INTERVAL=500
 
 AUTORESUME_FROM_CHECKPOINT=True
 RUN_NAME=advertise_gen_ft
-BASE_MODEL_PATH=THUDM/chatglm3-6b
+BASE_MODEL_PATH=/gemini/pretrain
 DATASET_PATH=formatted_data/advertise_gen.jsonl
 
 DATESTR=`date +%Y%m%d-%H%M%S`

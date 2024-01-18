@@ -2,7 +2,7 @@
 
 本目录提供 ChatGLM3-6B 模型的微调示例，包括全量微调和 P-Tuning v2。格式上，提供多轮对话微调样例和输入输出格式微调样例。
 
-如果将模型下载到了本地，本文和代码中的 `THUDM/chatglm3-6b` 字段均应替换为相应地址以从本地加载模型。
+如果将模型下载到了本地，本文和代码中的 `/gemini/pretrain` 字段均应替换为相应地址以从本地加载模型。
 
 运行示例需要 `python>=3.10`，除基础的 `torch` 依赖外，示例代码运行还需要依赖 
 
@@ -137,14 +137,14 @@ pip install -r requirements.txt
 
 ```bash
 cd ../composite_demo
-MODEL_PATH="path to finetuned model checkpoint" TOKENIZER_PATH="THUDM/chatglm3-6b" streamlit run main.py
+MODEL_PATH="path to finetuned model checkpoint" TOKENIZER_PATH="/gemini/pretrain" streamlit run main.py
 ```
 
 对于 P-Tuning v2 微调，可以使用以下方式进行部署
 
 ```bash
 cd ../composite_demo
-MODEL_PATH="THUDM/chatglm3-6b" PT_PATH="path to p-tuning checkpoint" streamlit run main.py
+MODEL_PATH="/gemini/pretrain" PT_PATH="path to p-tuning checkpoint" streamlit run main.py
 ```
 
 ## 输入输出格式
@@ -187,12 +187,12 @@ MODEL_PATH="THUDM/chatglm3-6b" PT_PATH="path to p-tuning checkpoint" streamlit r
 ```bash
 python inference.py \
     --pt-checkpoint "path to p-tuning checkpoint" \
-    --model THUDM/chatglm3-6b 
+    --model /gemini/pretrain 
 ```
 
 ```bash
 python inference.py \
-    --tokenizer THUDM/chatglm3-6b \
+    --tokenizer /gemini/pretrain \
     --model "path to finetuned model checkpoint" 
 ```
 
